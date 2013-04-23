@@ -10,6 +10,9 @@
 		FC2F02031725664900F32B8E /* ES1Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2F02021725664900F32B8E /* ES1Renderer.m */; };
 		FC2F0206172570D300F32B8E /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2F0205172570D300F32B8E /* EAGLView.m */; };
 		FC2F020A1725833400F32B8E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC2F02091725833400F32B8E /* MainWindow.xib */; };
+		FC5C7AA7172676B400BF2C4B /* AbstractScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5C7AA6172676B400BF2C4B /* AbstractScene.m */; };
+		FC5C7AAB17267B1100BF2C4B /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5C7AAA17267B1100BF2C4B /* GameScene.m */; };
+		FC5C7AAF17267C2A00BF2C4B /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5C7AAE17267C2A00BF2C4B /* GameController.m */; };
 		FC619252172182F000C147D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC619251172182F000C147D6 /* UIKit.framework */; };
 		FC619254172182F000C147D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC619253172182F000C147D6 /* Foundation.framework */; };
 		FC619256172182F000C147D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC619255172182F000C147D6 /* CoreGraphics.framework */; };
@@ -45,6 +48,15 @@
 		FC2F0204172570D300F32B8E /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
 		FC2F0205172570D300F32B8E /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
 		FC2F02091725833400F32B8E /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		FC5C7AA11726717100BF2C4B /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		FC5C7AA2172671F100BF2C4B /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		FC5C7AA31726752000BF2C4B /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		FC5C7AA5172676B400BF2C4B /* AbstractScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractScene.h; sourceTree = "<group>"; };
+		FC5C7AA6172676B400BF2C4B /* AbstractScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractScene.m; sourceTree = "<group>"; };
+		FC5C7AA917267B1100BF2C4B /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		FC5C7AAA17267B1100BF2C4B /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		FC5C7AAD17267C2A00BF2C4B /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		FC5C7AAE17267C2A00BF2C4B /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 		FC61924E172182F000C147D6 /* Young.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Young.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC619251172182F000C147D6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FC619253172182F000C147D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,6 +109,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC5C7A9F1726710B00BF2C4B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FC2F02011725664900F32B8E /* ES1Renderer.h */,
+				FC2F02021725664900F32B8E /* ES1Renderer.m */,
+				FC61929217218DE700C147D6 /* ES2Renderer.h */,
+				FC61929317218DE700C147D6 /* ES2Renderer.m */,
+				FC61928F17218D2800C147D6 /* ESRender.h */,
+				FC2F0204172570D300F32B8E /* EAGLView.h */,
+				FC2F0205172570D300F32B8E /* EAGLView.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		FC5C7AA01726713D00BF2C4B /* Global Headers */ = {
+			isa = PBXGroup;
+			children = (
+				FC5C7AA11726717100BF2C4B /* Global.h */,
+				FC5C7AA2172671F100BF2C4B /* SynthesizeSingleton.h */,
+				FC5C7AA31726752000BF2C4B /* Common.h */,
+			);
+			name = "Global Headers";
+			sourceTree = "<group>";
+		};
+		FC5C7AA41726756000BF2C4B /* Abstract Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FC5C7AA5172676B400BF2C4B /* AbstractScene.h */,
+				FC5C7AA6172676B400BF2C4B /* AbstractScene.m */,
+			);
+			name = "Abstract Classes";
+			sourceTree = "<group>";
+		};
+		FC5C7AA817267AE200BF2C4B /* Game Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FC5C7AA917267B1100BF2C4B /* GameScene.h */,
+				FC5C7AAA17267B1100BF2C4B /* GameScene.m */,
+			);
+			name = "Game Scenes";
+			sourceTree = "<group>";
+		};
+		FC5C7AAC17267C0400BF2C4B /* Game Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC5C7AAD17267C2A00BF2C4B /* GameController.h */,
+				FC5C7AAE17267C2A00BF2C4B /* GameController.m */,
+			);
+			name = "Game Controller";
+			sourceTree = "<group>";
+		};
 		FC619245172182F000C147D6 = {
 			isa = PBXGroup;
 			children = (
@@ -132,17 +195,15 @@
 		FC619257172182F000C147D6 /* Young */ = {
 			isa = PBXGroup;
 			children = (
-				FC2F02011725664900F32B8E /* ES1Renderer.h */,
-				FC2F02021725664900F32B8E /* ES1Renderer.m */,
-				FC61929217218DE700C147D6 /* ES2Renderer.h */,
-				FC61929317218DE700C147D6 /* ES2Renderer.m */,
-				FC61928F17218D2800C147D6 /* ESRender.h */,
-				FC2F0204172570D300F32B8E /* EAGLView.h */,
-				FC2F0205172570D300F32B8E /* EAGLView.m */,
+				FC5C7AAC17267C0400BF2C4B /* Game Controller */,
+				FC5C7AA817267AE200BF2C4B /* Game Scenes */,
+				FC5C7AA41726756000BF2C4B /* Abstract Classes */,
+				FC5C7AA01726713D00BF2C4B /* Global Headers */,
+				FC5C7A9F1726710B00BF2C4B /* Base */,
 				FC619260172182F000C147D6 /* AppDelegate.h */,
 				FC619261172182F000C147D6 /* AppDelegate.m */,
-				FC619258172182F000C147D6 /* Supporting Files */,
 				FC2F02091725833400F32B8E /* MainWindow.xib */,
+				FC619258172182F000C147D6 /* Supporting Files */,
 			);
 			path = Young;
 			sourceTree = "<group>";
@@ -295,6 +356,9 @@
 				FC61929417218DE700C147D6 /* ES2Renderer.m in Sources */,
 				FC2F02031725664900F32B8E /* ES1Renderer.m in Sources */,
 				FC2F0206172570D300F32B8E /* EAGLView.m in Sources */,
+				FC5C7AA7172676B400BF2C4B /* AbstractScene.m in Sources */,
+				FC5C7AAB17267B1100BF2C4B /* GameScene.m in Sources */,
+				FC5C7AAF17267C2A00BF2C4B /* GameController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,14 @@
 //
 
 #import "ES1Renderer.h"
+#import "Global.h"
+#import "GameController.h"
+
+@interface ES1Renderer (Private)
+
+- (void)initOpenGL;
+
+@end
 
 @implementation ES1Renderer
 
@@ -28,47 +36,17 @@
         glBindRenderbufferOES(GL_RENDERBUFFER_OES, colorRenderbuffer);
         glFramebufferRenderbufferOES(GL_FRAMEBUFFER_OES, GL_COLOR_ATTACHMENT0_OES, GL_RENDERBUFFER_OES, colorRenderbuffer);
         
+        sharedGameController = [GameController sharedGameController];
     }
     return self;
 }
 
 - (void) render
 {
-    static const GLfloat squareVertices[] = {
-        -0.5f, -0.33f,
-        0.5f, -0.33f,
-        -0.5f, 0.33f,
-        0.5f, 0.33f,
-    };
-    
-    static const GLubyte squareColors[] = {
-        255, 255, 0, 255,
-        0, 255, 255, 255,
-        0, 0, 0, 0,
-        255, 0, 255, 255,
-    };
-    
-    [EAGLContext setCurrentContext:context];
-    
-    glBindFramebufferOES(GL_FRAMEBUFFER_OES, defaultFramebuffer);
-    glViewport(0, 0, backingWidth, backingHeight);
-    
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    glMatrixMode(GL_MODELVIEW);
-    glLoadIdentity();
-    
-    glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
     
-    glVertexPointer(2, GL_FLOAT, 0, squareVertices);
-    glEnableClientState(GL_VERTEX_ARRAY);
-    glColorPointer(4, GL_UNSIGNED_BYTE, 0, squareColors);
-    glEnableClientState(GL_COLOR_ARRAY);
+    [sharedGameController renderCurrentScene];
     
-    glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
-    
-    glBindRenderbufferOES(GL_RENDERBUFFER_OES, colorRenderbuffer);
     [context presentRenderbuffer:GL_RENDERBUFFER_OES];
 }
 
@@ -84,6 +62,9 @@
         NSLog(@"Failed to complete framebuffer object %x", glCheckFramebufferStatusOES(GL_FRAMEBUFFER_OES));
         return NO;
     }
+    
+    [self initOpenGL];
+    
     return YES;
 }
 
@@ -108,6 +89,32 @@
     context = nil;
 
     [super dealloc];
+}
+
+@end
+
+@implementation ES1Renderer (Private)
+
+- (void)initOpenGL
+{
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    
+    glOrthof(0, backingWidth, 0, backingHeight, -1, 1);
+    
+    glViewport(0, 0, backingWidth, backingHeight);
+    
+    
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+    
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+    
+    
+    glDisable(GL_DEPTH_TEST);
+    
+    glEnableClientState(GL_VERTEX_ARRAY);
+    glEnableClientState(GL_COLOR_ARRAY);
 }
 
 @end

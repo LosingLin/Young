@@ -10,6 +10,8 @@
 #import <OpenGLES/ES1/gl.h>
 #import <OpenGLES/ES1/glext.h>
 
+@class GameController;
+
 @interface ES1Renderer : NSObject<ESRender>
 {
     EAGLContext *context;
@@ -18,6 +20,8 @@
     GLint backingHeight;
     
     GLuint defaultFramebuffer, colorRenderbuffer;
+    
+    GameController *sharedGameController;
 }
 
 - (void) render;

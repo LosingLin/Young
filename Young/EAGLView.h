@@ -10,6 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "ESRender.h"
 
+@class GameController;
 @interface EAGLView : UIView
 {
     id <ESRender> renderer;
@@ -18,6 +19,9 @@
     NSInteger animationFrameInterval;
     id displayLink;
     NSTimer *animationTimer;
+    
+    CFTimeInterval lastTime;
+    GameController *sharedGameCotroller;
 }
 
 @property (readonly, nonatomic, getter = isAnimating) BOOL animating;
