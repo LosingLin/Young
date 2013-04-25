@@ -198,16 +198,16 @@
 		FC619257172182F000C147D6 /* Young */ = {
 			isa = PBXGroup;
 			children = (
-				FC646CBC172964B300FDB80C /* Exercise */,
+				FC5C7AA01726713D00BF2C4B /* Global Headers */,
 				FC5C7AAC17267C0400BF2C4B /* Game Controller */,
 				FC5C7AA817267AE200BF2C4B /* Game Scenes */,
 				FC5C7AA41726756000BF2C4B /* Abstract Classes */,
-				FC5C7AA01726713D00BF2C4B /* Global Headers */,
 				FC5C7A9F1726710B00BF2C4B /* Base */,
 				FC619260172182F000C147D6 /* AppDelegate.h */,
 				FC619261172182F000C147D6 /* AppDelegate.m */,
 				FC2F02091725833400F32B8E /* MainWindow.xib */,
 				FC619258172182F000C147D6 /* Supporting Files */,
+				FC646CBC172964B300FDB80C /* Exercise */,
 			);
 			path = Young;
 			sourceTree = "<group>";
