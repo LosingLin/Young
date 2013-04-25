@@ -9,6 +9,7 @@
 #import "GameController.h"
 #import "GameScene.h"
 #import "Common.h"
+#import "TriangleScene.h"
 
 @interface GameController (Private)
 
@@ -68,7 +69,11 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(GameController);
     [gameScenes setValue:scene forKey:@"game"];
     [scene release];
     
-    currentScene = [gameScenes objectForKey:@"game"];
+    TriangleScene *tScene = [[TriangleScene alloc] init];
+    [gameScenes setValue:tScene forKey:@"triangle"];
+    [tScene release];
+    
+    currentScene = [gameScenes objectForKey:@"triangle"];
     
     SLQLOG(@"INFO - GameController: Finished game initialization.");
 }

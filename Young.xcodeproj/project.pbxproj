@@ -30,6 +30,7 @@
 		FC6192871721868200C147D6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6192861721868200C147D6 /* OpenGLES.framework */; };
 		FC61928B17218AAD00C147D6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC61928A17218AAD00C147D6 /* QuartzCore.framework */; };
 		FC61929417218DE700C147D6 /* ES2Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC61929317218DE700C147D6 /* ES2Renderer.m */; };
+		FC646CBF1729652000FDB80C /* TriangleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FC646CBE1729652000FDB80C /* TriangleScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,8 @@
 		FC61928F17218D2800C147D6 /* ESRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESRender.h; sourceTree = "<group>"; };
 		FC61929217218DE700C147D6 /* ES2Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ES2Renderer.h; sourceTree = "<group>"; };
 		FC61929317218DE700C147D6 /* ES2Renderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ES2Renderer.m; sourceTree = "<group>"; };
+		FC646CBD1729652000FDB80C /* TriangleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleScene.h; sourceTree = "<group>"; };
+		FC646CBE1729652000FDB80C /* TriangleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +198,7 @@
 		FC619257172182F000C147D6 /* Young */ = {
 			isa = PBXGroup;
 			children = (
+				FC646CBC172964B300FDB80C /* Exercise */,
 				FC5C7AAC17267C0400BF2C4B /* Game Controller */,
 				FC5C7AA817267AE200BF2C4B /* Game Scenes */,
 				FC5C7AA41726756000BF2C4B /* Abstract Classes */,
@@ -239,6 +243,15 @@
 				FC619278172182F000C147D6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC646CBC172964B300FDB80C /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				FC646CBD1729652000FDB80C /* TriangleScene.h */,
+				FC646CBE1729652000FDB80C /* TriangleScene.m */,
+			);
+			name = Exercise;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +372,7 @@
 				FC5C7AA7172676B400BF2C4B /* AbstractScene.m in Sources */,
 				FC5C7AAB17267B1100BF2C4B /* GameScene.m in Sources */,
 				FC5C7AAF17267C2A00BF2C4B /* GameController.m in Sources */,
+				FC646CBF1729652000FDB80C /* TriangleScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
