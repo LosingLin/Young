@@ -31,6 +31,8 @@
 		FC61928B17218AAD00C147D6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC61928A17218AAD00C147D6 /* QuartzCore.framework */; };
 		FC61929417218DE700C147D6 /* ES2Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC61929317218DE700C147D6 /* ES2Renderer.m */; };
 		FC646CBF1729652000FDB80C /* TriangleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FC646CBE1729652000FDB80C /* TriangleScene.m */; };
+		FC79CD991737DE66001DCB24 /* TextureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC79CD981737DE66001DCB24 /* TextureManager.m */; };
+		FCACBE62172AC3EA009741FC /* Texture2D.m in Sources */ = {isa = PBXBuildFile; fileRef = FCACBE61172AC3EA009741FC /* Texture2D.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,11 @@
 		FC61929317218DE700C147D6 /* ES2Renderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ES2Renderer.m; sourceTree = "<group>"; };
 		FC646CBD1729652000FDB80C /* TriangleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleScene.h; sourceTree = "<group>"; };
 		FC646CBE1729652000FDB80C /* TriangleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleScene.m; sourceTree = "<group>"; };
+		FC646CC0172979D300FDB80C /* Structures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Structures.h; sourceTree = "<group>"; };
+		FC79CD971737DE66001DCB24 /* TextureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureManager.h; sourceTree = "<group>"; };
+		FC79CD981737DE66001DCB24 /* TextureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextureManager.m; sourceTree = "<group>"; };
+		FCACBE60172AC3EA009741FC /* Texture2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture2D.h; sourceTree = "<group>"; };
+		FCACBE61172AC3EA009741FC /* Texture2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Texture2D.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +139,7 @@
 				FC5C7AA11726717100BF2C4B /* Global.h */,
 				FC5C7AA2172671F100BF2C4B /* SynthesizeSingleton.h */,
 				FC5C7AA31726752000BF2C4B /* Common.h */,
+				FC646CC0172979D300FDB80C /* Structures.h */,
 			);
 			name = "Global Headers";
 			sourceTree = "<group>";
@@ -199,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				FC5C7AA01726713D00BF2C4B /* Global Headers */,
+				FCACBE5D172AC274009741FC /* Game Engine */,
 				FC5C7AAC17267C0400BF2C4B /* Game Controller */,
 				FC5C7AA817267AE200BF2C4B /* Game Scenes */,
 				FC5C7AA41726756000BF2C4B /* Abstract Classes */,
@@ -252,6 +261,41 @@
 				FC646CBE1729652000FDB80C /* TriangleScene.m */,
 			);
 			name = Exercise;
+			sourceTree = "<group>";
+		};
+		FC79CD961737DB5C001DCB24 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FC79CD971737DE66001DCB24 /* TextureManager.h */,
+				FC79CD981737DE66001DCB24 /* TextureManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		FCACBE5D172AC274009741FC /* Game Engine */ = {
+			isa = PBXGroup;
+			children = (
+				FC79CD961737DB5C001DCB24 /* Managers */,
+				FCACBE5E172AC2E1009741FC /* Image */,
+			);
+			name = "Game Engine";
+			sourceTree = "<group>";
+		};
+		FCACBE5E172AC2E1009741FC /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				FCACBE5F172AC3C1009741FC /* Texture2D */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		FCACBE5F172AC3C1009741FC /* Texture2D */ = {
+			isa = PBXGroup;
+			children = (
+				FCACBE60172AC3EA009741FC /* Texture2D.h */,
+				FCACBE61172AC3EA009741FC /* Texture2D.m */,
+			);
+			name = Texture2D;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,6 +417,8 @@
 				FC5C7AAB17267B1100BF2C4B /* GameScene.m in Sources */,
 				FC5C7AAF17267C2A00BF2C4B /* GameController.m in Sources */,
 				FC646CBF1729652000FDB80C /* TriangleScene.m in Sources */,
+				FCACBE62172AC3EA009741FC /* Texture2D.m in Sources */,
+				FC79CD991737DE66001DCB24 /* TextureManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

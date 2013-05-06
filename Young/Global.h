@@ -10,6 +10,7 @@
 #define Young_Global_h
 
 #import <OpenGLES/ES1/gl.h>
+#import "Structures.h"
 
 #pragma mark - 
 #pragma mark Debug
