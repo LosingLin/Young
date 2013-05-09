@@ -10,6 +10,7 @@
 		FC2F02031725664900F32B8E /* ES1Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2F02021725664900F32B8E /* ES1Renderer.m */; };
 		FC2F0206172570D300F32B8E /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2F0205172570D300F32B8E /* EAGLView.m */; };
 		FC2F020A1725833400F32B8E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC2F02091725833400F32B8E /* MainWindow.xib */; };
+		FC3912CA173A842B00EBD281 /* ImageRenderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3912C9173A842B00EBD281 /* ImageRenderManager.m */; };
 		FC5C7AA7172676B400BF2C4B /* AbstractScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5C7AA6172676B400BF2C4B /* AbstractScene.m */; };
 		FC5C7AAB17267B1100BF2C4B /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5C7AAA17267B1100BF2C4B /* GameScene.m */; };
 		FC5C7AAF17267C2A00BF2C4B /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5C7AAE17267C2A00BF2C4B /* GameController.m */; };
@@ -51,6 +52,8 @@
 		FC2F0204172570D300F32B8E /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
 		FC2F0205172570D300F32B8E /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
 		FC2F02091725833400F32B8E /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		FC3912C8173A842B00EBD281 /* ImageRenderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageRenderManager.h; sourceTree = "<group>"; };
+		FC3912C9173A842B00EBD281 /* ImageRenderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageRenderManager.m; sourceTree = "<group>"; };
 		FC5C7AA11726717100BF2C4B /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		FC5C7AA2172671F100BF2C4B /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
 		FC5C7AA31726752000BF2C4B /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
@@ -268,6 +271,8 @@
 			children = (
 				FC79CD971737DE66001DCB24 /* TextureManager.h */,
 				FC79CD981737DE66001DCB24 /* TextureManager.m */,
+				FC3912C8173A842B00EBD281 /* ImageRenderManager.h */,
+				FC3912C9173A842B00EBD281 /* ImageRenderManager.m */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -419,6 +424,7 @@
 				FC646CBF1729652000FDB80C /* TriangleScene.m in Sources */,
 				FCACBE62172AC3EA009741FC /* Texture2D.m in Sources */,
 				FC79CD991737DE66001DCB24 /* TextureManager.m in Sources */,
+				FC3912CA173A842B00EBD281 /* ImageRenderManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -46,7 +46,7 @@ typedef struct {
 //holds a pointer to the iamges entry within the IVA
 typedef struct {
     TexturedColoredQuad *texturedColoredQuad;
-    TexturedColoredQuad *texturedColoredIVA;
+    TexturedColoredQuad *texturedColoredQuadIVA;
     GLuint textureName;
     NSUInteger renderIndex;
 }ImageDetails;
