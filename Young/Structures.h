@@ -28,7 +28,7 @@ typedef struct {
 
 // stores geometry, texture and color information for a single vertex
 typedef struct {
-    CGPoint geometyVertex;
+    CGPoint geometryVertex;
     Color4f vertexColor;
     CGPoint textureVertex;
 }TexturedColoredVertex;

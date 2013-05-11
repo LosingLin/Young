@@ -19,13 +19,12 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(TextureManager);
 - (void)dealloc
 {
     [cachedTextures release];
-    
     [super dealloc];
 }
 
 - (id)init
 {
-    if (self = [self init])
+    if (self = [super init])
     {
         cachedTextures = [[NSMutableDictionary alloc] init];
     }

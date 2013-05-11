@@ -71,7 +71,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(ImageRenderManager);
 
 - (void)renderImages
 {
-    glVertexPointer(2, GL_FLOAT, sizeof(TexturedColoredVertex), &iva[0].geometyVertex);
+    glVertexPointer(2, GL_FLOAT, sizeof(TexturedColoredVertex), &iva[0].geometryVertex);
     glTexCoordPointer(2, GL_FLOAT, sizeof(TexturedColoredVertex), &iva[0].textureVertex);
     glColorPointer(4, GL_FLOAT, sizeof(TexturedColoredVertex), &iva[0].vertexColor);
     

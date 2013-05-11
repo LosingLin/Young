@@ -73,7 +73,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(GameController);
     [gameScenes setValue:tScene forKey:@"triangle"];
     [tScene release];
     
-    currentScene = [gameScenes objectForKey:@"triangle"];
+    currentScene = [gameScenes objectForKey:@"game"];
     
     SLQLOG(@"INFO - GameController: Finished game initialization.");
 }

@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC2EE1D9173DF356007B49AE /* knight.gif in Resources */ = {isa = PBXBuildFile; fileRef = FC2EE1D8173DF356007B49AE /* knight.gif */; };
 		FC2F02031725664900F32B8E /* ES1Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2F02021725664900F32B8E /* ES1Renderer.m */; };
 		FC2F0206172570D300F32B8E /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2F0205172570D300F32B8E /* EAGLView.m */; };
 		FC2F020A1725833400F32B8E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC2F02091725833400F32B8E /* MainWindow.xib */; };
 		FC3912CA173A842B00EBD281 /* ImageRenderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3912C9173A842B00EBD281 /* ImageRenderManager.m */; };
+		FC3F8DA2173D236000DE3C80 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F8DA1173D236000DE3C80 /* Image.m */; };
 		FC5C7AA7172676B400BF2C4B /* AbstractScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5C7AA6172676B400BF2C4B /* AbstractScene.m */; };
 		FC5C7AAB17267B1100BF2C4B /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5C7AAA17267B1100BF2C4B /* GameScene.m */; };
 		FC5C7AAF17267C2A00BF2C4B /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5C7AAE17267C2A00BF2C4B /* GameController.m */; };
@@ -47,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC2EE1D8173DF356007B49AE /* knight.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = knight.gif; sourceTree = "<group>"; };
 		FC2F02011725664900F32B8E /* ES1Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ES1Renderer.h; sourceTree = "<group>"; };
 		FC2F02021725664900F32B8E /* ES1Renderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ES1Renderer.m; sourceTree = "<group>"; };
 		FC2F0204172570D300F32B8E /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
@@ -54,6 +57,9 @@
 		FC2F02091725833400F32B8E /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		FC3912C8173A842B00EBD281 /* ImageRenderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageRenderManager.h; sourceTree = "<group>"; };
 		FC3912C9173A842B00EBD281 /* ImageRenderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageRenderManager.m; sourceTree = "<group>"; };
+		FC3F8DA0173D236000DE3C80 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		FC3F8DA1173D236000DE3C80 /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
+		FC3F8DA3173D2E4600DE3C80 /* Transform2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Transform2D.h; sourceTree = "<group>"; };
 		FC5C7AA11726717100BF2C4B /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		FC5C7AA2172671F100BF2C4B /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
 		FC5C7AA31726752000BF2C4B /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
@@ -122,6 +128,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC2EE1D6173DF309007B49AE /* Game Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FC2EE1D7173DF323007B49AE /* Images */,
+			);
+			name = "Game Resource";
+			sourceTree = "<group>";
+		};
+		FC2EE1D7173DF323007B49AE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FC2EE1D8173DF356007B49AE /* knight.gif */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		FC5C7A9F1726710B00BF2C4B /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				FC5C7AA11726717100BF2C4B /* Global.h */,
+				FC3F8DA3173D2E4600DE3C80 /* Transform2D.h */,
 				FC5C7AA2172671F100BF2C4B /* SynthesizeSingleton.h */,
 				FC5C7AA31726752000BF2C4B /* Common.h */,
 				FC646CC0172979D300FDB80C /* Structures.h */,
@@ -209,6 +232,7 @@
 		FC619257172182F000C147D6 /* Young */ = {
 			isa = PBXGroup;
 			children = (
+				FC2EE1D6173DF309007B49AE /* Game Resource */,
 				FC5C7AA01726713D00BF2C4B /* Global Headers */,
 				FCACBE5D172AC274009741FC /* Game Engine */,
 				FC5C7AAC17267C0400BF2C4B /* Game Controller */,
@@ -289,6 +313,8 @@
 		FCACBE5E172AC2E1009741FC /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				FC3F8DA0173D236000DE3C80 /* Image.h */,
+				FC3F8DA1173D236000DE3C80 /* Image.m */,
 				FCACBE5F172AC3C1009741FC /* Texture2D */,
 			);
 			name = Image;
@@ -379,6 +405,7 @@
 				FC619266172182F000C147D6 /* Default@2x.png in Resources */,
 				FC619268172182F000C147D6 /* Default-568h@2x.png in Resources */,
 				FC2F020A1725833400F32B8E /* MainWindow.xib in Resources */,
+				FC2EE1D9173DF356007B49AE /* knight.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +452,7 @@
 				FCACBE62172AC3EA009741FC /* Texture2D.m in Sources */,
 				FC79CD991737DE66001DCB24 /* TextureManager.m in Sources */,
 				FC3912CA173A842B00EBD281 /* ImageRenderManager.m in Sources */,
+				FC3F8DA2173D236000DE3C80 /* Image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
